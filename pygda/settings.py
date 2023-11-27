@@ -27,8 +27,8 @@ SECRET_KEY = 'Secretkey'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app", ]
-DATABASES = {"default": env.db("POSTGRES_URL")}
+ALLOWED_HOSTS = [".vercel.app", ]  # todo this one
+DATABASES = {"default": env.db("POSTGRES_URL")}  # todo this one
 
 # Application definition
 
@@ -74,13 +74,6 @@ WSGI_APPLICATION = 'pygda.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
