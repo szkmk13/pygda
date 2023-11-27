@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [".vercel.app", ]  # todo this one
 DATABASES = {"default": env.db("POSTGRES_URL")}  # todo this one
+STATIC_ROOT = str(BASE_DIR / "staticfiles")
 
 # Application definition
 
