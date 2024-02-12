@@ -1,5 +1,5 @@
 """
-WSGI config for pygda project.
+WSGI config for this project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,8 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pygda.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.production')
 
 application = get_wsgi_application()
 
-app = application  # todo
+app = application  # This part is important, that's how Vercel knows it's an app.
