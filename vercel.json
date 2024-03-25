@@ -10,7 +10,10 @@
     },
     {
       "src": "migrate.sh",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "dist": "static/"
+      }
     },
     {
       "src": "*.html",
