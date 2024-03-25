@@ -12,7 +12,7 @@
       "src": "migrate.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "static/"
+        "outputDirectory": "static/"
       }
     },
     {
