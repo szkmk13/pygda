@@ -10,10 +10,7 @@
     },
     {
       "src": "migrate.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "dist": "static/"
-      }
+      "use": "@vercel/static-build"
     },
     {
       "src": "*.html",
@@ -29,5 +26,6 @@
       "src": "/(.*)",
       "dest": "config/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "static"
 }
